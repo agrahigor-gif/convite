@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+
+    background: white;
+
+    padding: 50px 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+}
+
+h1 {
+    color: #ff4f81;
+
+    font-size: 32px;
+
+    margin: 20px 0;
+}
+
+p {
+    color: #555;
+
+    font-size: 20px;
+
+    margin: 15px 0;
+}
+
+.coracoes {
+    font-size: 30px;
+
+    animation: flutuar 2s infinite ease-in-out;
+}
+
+.botoes {
+    margin-top: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+button {
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 50px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#sim {
+    background: #441f2a;
+
+    color: white;
+}
+
+#sim:hover {
+    transform: scale(1.1);
+
+    background: #572b38;
+}
+
+#nao {
+    background: #ddd;
+
+    color: #555;
+
+    position: relative;
+}
+
+.emoji {
+    font-size: 50px;
+
+    margin-top: 25px;
+}
+
+.escondido {
+    display: none;
+}
+
+@keyframes flutuar {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
